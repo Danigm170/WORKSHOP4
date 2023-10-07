@@ -1,4 +1,4 @@
-public class Yate extends Embarcacion implements Validacion{
+public class Yate extends Embarcacion{
     private int cantidadCamarotes;
 
     public Yate(Capitan capitan, double precioBase, int añoFabricacion, double eslora, int cantidadCamarotes) {
@@ -22,4 +22,6 @@ public class Yate extends Embarcacion implements Validacion{
     public void setCantidadCamarotes(int cantidadCamarotes) {
         this.cantidadCamarotes = cantidadCamarotes;
     }
+
+
 }

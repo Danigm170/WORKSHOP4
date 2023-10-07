@@ -152,15 +152,25 @@ public class Main {
                         Embarcacion embarcacionMostrar = embarcaciones.get(numEmbarcacionMostrar);
 
                         System.out.println("Especificaciones de la embarcación:");
+                        System.out.println("--------------------:");
                         System.out.println("Tipo: " + embarcacionMostrar.getClass().getSimpleName());
                         System.out.println("Eslora: " + embarcacionMostrar.getEslora() + " metros");
+
+                        System.out.println("Nombre capitan :"+embarcacionMostrar.getCapitan().getNombre() );
+                        System.out.println("Apellido capitan :"+embarcacionMostrar.getCapitan().getApellido());
+                        System.out.println("Matricula de navegacion capitan :"+embarcacionMostrar.getCapitan().getMatriculaNavegacion() );
+
+                        embarcacionMostrar.validar();
 
                         System.out.println("Justificación del precio:");
                         System.out.println("Precio base: $" + embarcacionMostrar.getPrecioBase());
                         System.out.println("Año de fabricación: " + embarcacionMostrar.getAñoFabricacion());
-                        if (embarcacionMostrar.getAñoFabricacion() > 2020) {
-                            System.out.println("Valor adicional por año de fabricación (2021 o posterior): $20,000");
-                        }
+
+                            System.out.println("valor total del alquiler: "+ embarcacionMostrar.calcularMontoAlquiler());
+
+
+
+                        System.out.println("--------------------:");
 
                     } else {
                         System.out.println("Número de embarcación no válido.");

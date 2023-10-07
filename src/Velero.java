@@ -1,4 +1,4 @@
-public class Velero extends Embarcacion implements Validacion {
+public class Velero extends Embarcacion  {
     private int cantidadMastiles;
 
     public Velero(Capitan capitan, double precioBase, int añoFabricacion, double eslora, int cantidadMastiles) {
@@ -22,4 +22,6 @@ public class Velero extends Embarcacion implements Validacion {
     public void setCantidadMastiles(int cantidadMastiles) {
         this.cantidadMastiles = cantidadMastiles;
     }
+
+
 }
